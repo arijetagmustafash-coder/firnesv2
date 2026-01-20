@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f0f0;
+    color: #d2b48c;
+}
+header{
+    text-align: left;
+    padding: 40px 20px;
+    background: linear-gradient(135deg,#4a342e,#f8f0f0);
+}
+header h1{
+    margin: 0;
+    font-size: 45px;
+    letter-spacing: 4px;
+}
+header p{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e6c9b8;
+}
+.gallery{
+    position: relative;
+    grid-template-columns: repeat(auto-fit,minimax(250px,1fr));
+    gap: 10px;
+    padding: 20px ;
+}
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background:rgba(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.gallery-item:hover .overlay{
+    opacity: 1;
+}
+.overlay span{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #4a342e;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.button{
+    background-color: #4a342e;
+    color: #f8f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

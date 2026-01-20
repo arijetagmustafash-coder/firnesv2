@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5e6d3;
+  color: #5c4033;
+  line-height: 1.6;
+}
+
+header {
+  background: #d4a5a5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* --- Personal Info Section --- */
+.profile-card {
+  background: #faf7f2;
+  border-left: 8px solid #d4a5a5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  background: #e8d4c8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.info-details h2 {
+  color: #6b4423;
+  margin-bottom: 5px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.stat-item {
+  background: #e8d4c8;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.stat-item span {
+  display: block;
+  font-size: 0.8rem;
+  color: #6b4423;
+  text-transform: uppercase;
+}
+
+/* --- Martial Arts / Fitness Sections --- */
+.content-section {
+  margin-bottom: 40px;
+}
+
+h3 {
+  border-bottom: 2px solid #d4a5a5;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  color: #6b4423;
+}
+
+.discipline-list {
+  list-style: none;
+}
+
+.discipline-item {
+  background: #faf7f2;
+  color: #5c4033;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.button{
+  background-color: #d4a5a5;
+  color: #faf6f1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

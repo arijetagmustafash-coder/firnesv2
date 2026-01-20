@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Martial Arts Pricing</title>
+    <link rel="stylesheet" href="../css/pricing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pricing Plans|AriStrongStudio</h1>
+        <p class="subtitle">Choose your perfect fitness journey</p>
+
+        <div class="pricing-grid">
+            <!-- Yoga Card -->
+            <div class="card">
+                <div class="icon">🧘‍♀️</div>
+                <h3>Yoga Flow</h3>
+                <p class="description">Flexibility & Inner Peace</p>
+                <div class="price">$29<small>/month</small></div>
+                <ul class="features">
+                    <li>4 Classes/Week</li>
+                    <li>Meditation Sessions</li>
+                    <li>Member Community</li>
+                    <li>Online Access</li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <!-- Kickboxing Card (Featured) -->
+            <div class="card featured">
+                <div class="badge">MOST POPULAR</div>
+                <div class="icon">🥊</div>
+                <h3>Kickboxing Elite</h3>
+                <p class="description">Power & Confidence</p>
+                <div class="price">$49<small>/month</small></div>
+                <ul class="features">
+                    <li>8 Classes/Week</li>
+                    <li>1-on-1 Training</li>
+                    <li>Fitness Assessment</li>
+                    <li>Nutrition Plan</li>
+                    <li>24/7 Gym Access</li>
+                </ul>
+                <button class="btn">Start Now</button>
+            </div>
+
+            <!-- Martial Arts Card -->
+            <div class="card">
+                <div class="icon">🥋</div>
+                <h3>Karate Master</h3>
+                <p class="description">Discipline & Strength</p>
+                <div class="price">$39<small>/month</small></div>
+                <ul class="features">
+                    <li>6 Classes/Week</li>
+                    <li>Belt Progression</li>
+                    <li>Self-Defense Focus</li>
+                    <li>Student Ranking</li>
+                </ul>
+                <button class="btn">Join Now</button>
+            </div>
+
+            <!-- Boxing Card -->
+            <div class="card">
+                <div class="icon">🥊</div>
+                <h3>Boxing Basics</h3>
+                <p class="description">Cardio & Energy</p>
+                <div class="price">$35<small>/month</small></div>
+                <ul class="features">
+                    <li>5 Classes/Week</li>
+                    <li>Bag Training</li>
+                    <li>Sparring Sessions</li>
+                    <li>Progress Tracking</li>
+                </ul>
+                <button class="btn">Start Today</button>
+            </div>
+
+            <!-- Pilates Card -->
+            <div class="card">
+                <div class="icon">💪</div>
+                <h3>Pilates Core</h3>
+                <p class="description">Toning & Wellness</p>
+                <div class="price">$32<small>/month</small></div>
+                <ul class="features">
+                    <li>5 Classes/Week</li>
+                    <li>Core Strengthening</li>
+                    <li>Postural Training</li>
+                    <li>Group Classes</li>
+                </ul>
+                <button class="btn">Begin Journey</button>
+            </div>
+
+            <!-- VIP Card -->
+            <div class="card featured">
+                <div class="badge">PREMIUM</div>
+                <div class="icon">👑</div>
+                <h3>VIP Ultimate</h3>
+                <p class="description">All-Access Excellence</p>
+                <div class="price">$79<small>/month</small></div>
+                <ul class="features">
+                    <li>Unlimited Classes</li>
+                    <li>Personal Trainer</li>
+                    <li>All Programs Included</li>
+                    <li>Premium Facilities</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button class="btn">Go Premium</button>
+            </div>
+        </div>
+    </div>
+    <a href="home.html"><button class="button">Back to Home</button></a>
+    <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const cardTitle = this.closest('.card').querySelector('h3').textContent;
+                const price = this.closest('.card').querySelector('.price').textContent;
+                alert(`You selected: ${cardTitle}\n${price}`);
+            });
+        });
+    </script>
+</body>
+</html>
